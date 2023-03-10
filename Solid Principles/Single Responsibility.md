@@ -12,7 +12,7 @@ class User:
         self.password = password
 
     def send_email(self):
-        # Envía un correo electrónico de bienvenida al usuario
+        # Sends a welcome email to the user
 
 ```
 In this example, the "User" class has two responsibilities: to handle user information and to send a welcome email. This design violates the SRP principle because if in the future we want to change the way emails are sent, we will have to modify the User class.
@@ -29,7 +29,7 @@ class User:
 
 class EmailService:
     def send_email(self, user):
-        # Envía un correo electrónico de bienvenida al usuario
+        # Sends a welcome email to the user
 ```
 
 In this design, the "User" class has a single responsibility for handling user information, and the "EmailService" class has a single responsibility for sending emails. In this way, we can modify the way emails are sent without having to change the User class.
