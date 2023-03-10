@@ -36,6 +36,5 @@ class Triangle extends Figure {
 Having created a new class that extends the "Figure" class and allows us to add the "calculateArea" functionality to the "triangle" class without modifying the original class ("Figure").
 
 ## Related principles
-- principle 1
-- principle 2
-- ...
+- Do the simplest thing that could possibly work
+- Separation of Concerns
